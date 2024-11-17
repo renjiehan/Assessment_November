@@ -10,6 +10,8 @@ public class EndPoints {
     static public List<long> primeNumbers(int listSize, int startFrom) {
         List<long> primes = new List<long>();
 
+        if(listSize <= 0 || startFrom <= 0) return primes;
+
         foreach(var prime in Prime.Numbers.StartingAt(startFrom).Take(listSize))
         {
             primes.Add(prime);
@@ -19,6 +21,9 @@ public class EndPoints {
     }
     static public List<string> fibonacci(int listSize, int startFrom) {
         List<string> sequence = new List<string>();
+
+        if(listSize <= 0 || startFrom <= 0) return sequence;
+
         BigInteger first = new BigInteger(0);
         BigInteger second = new BigInteger(1);
         BigInteger next = new BigInteger(0);
@@ -31,16 +36,18 @@ public class EndPoints {
         }
 
         for(var i = 0; i < listSize; i++) {
-            sequence.Add(next.ToString("N0").Replace(",", ""));
-            
             next = first + second;
             first = second;
             second = next;
+
+            sequence.Add(next.ToString("N0").Replace(",", ""));
         }
 
         return sequence;
     }
     static public List<char> RandomChars(int listSize, int seed) {
+        if(listSize <= 0 || seed <= 0) return new List<char>();
+        
         List<char> chars = new List<char>();
         for(var i = 'A'; i<='Z'; i++) {
             chars.Add(i);

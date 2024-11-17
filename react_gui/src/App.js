@@ -30,6 +30,8 @@ function App() {
         .replace(/"/g, '');
 
       setJsonData(formattedData);
+      if(formattedData === "")  setJsonData("Please make sure X and Y are both greater than zero.");
+
       console.log(`Success from ${url}, data is:`, data);
       console.log(`Success from ${url}:`, formattedData);
     } 

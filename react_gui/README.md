@@ -16,7 +16,7 @@ The web page runs the web app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## SPEC and tools
-It is designed with input X = [0, 100], Y = [0, 10000] for the APIs.
+It is designed with input X = (0, 100], Y = (0, 10000] for the APIs.
 
 It also applies package `Open.Numeric.Primes` for generating prime numbers, and it applies `BigInterger` 
 to generate Fibonacci sequence for the number data type will be incorrect beyond 78th Fibonacci number. 
