@@ -1,0 +1,6 @@
+@utilsApi_HostAddress = http://localhost:5147
+
+GET {{utilsApi_HostAddress}}/endpoints/
+Accept: application/json
+
+###
