@@ -9,7 +9,7 @@ on C# to run the API server.
 
 To quickly test, open a console in both project to run the server.
 
-For frontend, run `npm start`. For backend, run `dotnet run --launch-profile https` at corresponding
+For frontend, run `npm install` and `npm start`. For backend, run `dotnet run --launch-profile https` at corresponding
 project folder. The API server has set CORS so the frontend could fecth API via axios easily.
 
 The web page runs the web app in the development mode.

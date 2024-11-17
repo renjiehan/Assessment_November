@@ -6,7 +6,7 @@ There is a README.md in the react_gui folder.
 
 For convenience, whoever wants to test the projects locally could download the project, and
 
-Run `npm start` in the folder react_gui and run `dotnet run --launch-profile https` in the utilsApi folder.
+Run `npm install` then `npm start` in the folder react_gui and run `dotnet run --launch-profile https` in the utilsApi folder.
 
 It should activate both servers separately. 
 
